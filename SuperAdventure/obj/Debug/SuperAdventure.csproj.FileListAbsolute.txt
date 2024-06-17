@@ -24,3 +24,4 @@ C:\Projects\SuperAdventure\SuperAdventure\bin\Debug\SuperAdventure.pdb
 C:\Projects\SuperAdventure\SuperAdventure\bin\Debug\Engine.dll
 C:\Projects\SuperAdventure\SuperAdventure\bin\Debug\Engine.pdb
 C:\Projects\SuperAdventure\SuperAdventure\obj\Debug\SuperAdv.5A2A7CD7.Up2Date
+C:\Projects\SuperAdventure\SuperAdventure\obj\Debug\SuperAdventure.TradingScreen.resources
