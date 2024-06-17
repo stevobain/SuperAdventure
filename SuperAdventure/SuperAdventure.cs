@@ -1,14 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-
 using Engine;
 
 namespace SuperAdventure
@@ -23,14 +17,21 @@ namespace SuperAdventure
         {
             InitializeComponent();
 
-            if (File.Exists(PLAYER_DATA_FILE_NAME))
+            //_player = PlayerDataMapper.CreateFromDatabase();
+
+            if (_player == null)
             {
-                _player = Player.CreatePlayerFromXmlString(File.ReadAllText(PLAYER_DATA_FILE_NAME));
+                if (File.Exists(PLAYER_DATA_FILE_NAME))
+                {
+                    _player = Player.CreatePlayerFromXmlString(File.ReadAllText(PLAYER_DATA_FILE_NAME));
+                }
+                else
+                {
+                    _player = Player.CreateDefaultPlayer();
+                }
             }
-            else
-            {
-                _player = Player.CreateDefaultPlayer();
-            }
+
+            _player.AddItemToInventory(World.ItemByID(World.ITEM_ID_CLUB));
 
             lblHitPoints.DataBindings.Add("Text", _player, "CurrentHitPoints");
             lblGold.DataBindings.Add("Text", _player, "Gold");
@@ -54,6 +55,8 @@ namespace SuperAdventure
                 HeaderText = "Quantity",
                 DataPropertyName = "Quantity"
             });
+
+            dgvInventory.ScrollBars = ScrollBars.Vertical;
 
             dgvQuests.RowHeadersVisible = false;
             dgvQuests.AutoGenerateColumns = false;
@@ -139,11 +142,13 @@ namespace SuperAdventure
                 btnSouth.Visible = (_player.CurrentLocation.LocationToSouth != null);
                 btnWest.Visible = (_player.CurrentLocation.LocationToWest != null);
 
+                btnTrade.Visible = (_player.CurrentLocation.VendorWorkingHere != null);
+
                 // Display current location name and description
                 rtbLocation.Text = _player.CurrentLocation.Name + Environment.NewLine;
                 rtbLocation.Text += _player.CurrentLocation.Description + Environment.NewLine;
 
-                if (_player.CurrentLocation.MonsterLivingHere == null)
+                if (!_player.CurrentLocation.HasAMonster)
                 {
                     cboWeapons.Visible = false;
                     cboPotions.Visible = false;
@@ -180,13 +185,6 @@ namespace SuperAdventure
             _player.MoveWest();
         }
 
-        private void btnTrade_Click(object sender, EventArgs e)
-        {
-            TradingScreen tradingScreen = new TradingScreen(_player);
-            tradingScreen.StartPosition = FormStartPosition.CenterParent;
-            tradingScreen.ShowDialog(this);
-        }
-
         private void btnUseWeapon_Click(object sender, EventArgs e)
         {
             // Get the currently selected weapon from the cboWeapons ComboBox
@@ -206,11 +204,27 @@ namespace SuperAdventure
         private void SuperAdventure_FormClosing(object sender, FormClosingEventArgs e)
         {
             File.WriteAllText(PLAYER_DATA_FILE_NAME, _player.ToXmlString());
+
+            //PlayerDataMapper.SaveToDatabase(_player);
         }
 
         private void cboWeapons_SelectedIndexChanged(object sender, EventArgs e)
         {
             _player.CurrentWeapon = (Weapon)cboWeapons.SelectedItem;
+        }
+
+        private void btnTrade_Click(object sender, EventArgs e)
+        {
+            TradingScreen tradingScreen = new TradingScreen(_player);
+            tradingScreen.StartPosition = FormStartPosition.CenterParent;
+            tradingScreen.ShowDialog(this);
+        }
+
+        private void btnMap_Click(object sender, EventArgs e)
+        {
+            WorldMap mapScreen = new WorldMap();
+            mapScreen.StartPosition = FormStartPosition.CenterParent;
+            mapScreen.ShowDialog(this);
         }
     }
 }

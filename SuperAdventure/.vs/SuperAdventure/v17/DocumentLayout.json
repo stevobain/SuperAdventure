@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Projects\\SuperAdventure\\SuperAdventure\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{80A8E0B5-1773-4E8A-B342-B00E508E6B4D}|SuperAdventure.csproj|c:\\projects\\superadventure\\superadventure\\worldmap.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80A8E0B5-1773-4E8A-B342-B00E508E6B4D}|SuperAdventure.csproj|solutionrelative:worldmap.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{80A8E0B5-1773-4E8A-B342-B00E508E6B4D}|SuperAdventure.csproj|c:\\projects\\superadventure\\superadventure\\worldmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{80A8E0B5-1773-4E8A-B342-B00E508E6B4D}|SuperAdventure.csproj|solutionrelative:worldmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{80A8E0B5-1773-4E8A-B342-B00E508E6B4D}|SuperAdventure.csproj|c:\\projects\\superadventure\\superadventure\\superadventure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{80A8E0B5-1773-4E8A-B342-B00E508E6B4D}|SuperAdventure.csproj|solutionrelative:superadventure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80A8E0B5-1773-4E8A-B342-B00E508E6B4D}|SuperAdventure.csproj|c:\\projects\\superadventure\\superadventure\\tradingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{80A8E0B5-1773-4E8A-B342-B00E508E6B4D}|SuperAdventure.csproj|solutionrelative:tradingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{80A8E0B5-1773-4E8A-B342-B00E508E6B4D}|SuperAdventure.csproj|c:\\projects\\superadventure\\superadventure\\superadventure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{80A8E0B5-1773-4E8A-B342-B00E508E6B4D}|SuperAdventure.csproj|solutionrelative:superadventure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{80A8E0B5-1773-4E8A-B342-B00E508E6B4D}|SuperAdventure.csproj|c:\\projects\\superadventure\\superadventure\\tradingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{80A8E0B5-1773-4E8A-B342-B00E508E6B4D}|SuperAdventure.csproj|solutionrelative:tradingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,62 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 715,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SuperAdventure.cs",
-              "DocumentMoniker": "C:\\Projects\\SuperAdventure\\SuperAdventure\\SuperAdventure.cs",
-              "RelativeDocumentMoniker": "SuperAdventure.cs",
-              "ToolTip": "C:\\Projects\\SuperAdventure\\SuperAdventure\\SuperAdventure.cs",
-              "RelativeToolTip": "SuperAdventure.cs",
-              "ViewState": "AQIAAKkAAAAAAAAAAAAnwLsAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T16:25:34.176Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SuperAdventure.cs [Design]",
-              "DocumentMoniker": "C:\\Projects\\SuperAdventure\\SuperAdventure\\SuperAdventure.cs",
-              "RelativeDocumentMoniker": "SuperAdventure.cs",
-              "ToolTip": "C:\\Projects\\SuperAdventure\\SuperAdventure\\SuperAdventure.cs [Design]",
-              "RelativeToolTip": "SuperAdventure.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T16:25:30.862Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TradingScreen.cs",
-              "DocumentMoniker": "C:\\Projects\\SuperAdventure\\SuperAdventure\\TradingScreen.cs",
-              "RelativeDocumentMoniker": "TradingScreen.cs",
-              "ToolTip": "C:\\Projects\\SuperAdventure\\SuperAdventure\\TradingScreen.cs",
-              "RelativeToolTip": "TradingScreen.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAALcAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T16:24:51.377Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TradingScreen.cs [Design]",
-              "DocumentMoniker": "C:\\Projects\\SuperAdventure\\SuperAdventure\\TradingScreen.cs",
-              "RelativeDocumentMoniker": "TradingScreen.cs",
-              "ToolTip": "C:\\Projects\\SuperAdventure\\SuperAdventure\\TradingScreen.cs [Design]",
-              "RelativeToolTip": "TradingScreen.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T16:18:43.248Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
@@ -93,6 +39,57 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WorldMap.Designer.cs",
+              "DocumentMoniker": "C:\\Projects\\SuperAdventure\\SuperAdventure\\WorldMap.Designer.cs",
+              "RelativeDocumentMoniker": "WorldMap.Designer.cs",
+              "ToolTip": "C:\\Projects\\SuperAdventure\\SuperAdventure\\WorldMap.Designer.cs",
+              "RelativeToolTip": "WorldMap.Designer.cs",
+              "ViewState": "AQIAAHcBAAAAAAAAAAAqwJkBAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T17:16:18.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WorldMap.cs",
+              "DocumentMoniker": "C:\\Projects\\SuperAdventure\\SuperAdventure\\WorldMap.cs",
+              "RelativeDocumentMoniker": "WorldMap.cs",
+              "ToolTip": "C:\\Projects\\SuperAdventure\\SuperAdventure\\WorldMap.cs",
+              "RelativeToolTip": "WorldMap.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAqwCcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T17:16:06.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SuperAdventure.cs",
+              "DocumentMoniker": "C:\\Projects\\SuperAdventure\\SuperAdventure\\SuperAdventure.cs",
+              "RelativeDocumentMoniker": "SuperAdventure.cs",
+              "ToolTip": "C:\\Projects\\SuperAdventure\\SuperAdventure\\SuperAdventure.cs",
+              "RelativeToolTip": "SuperAdventure.cs",
+              "ViewState": "AQIAAMMAAAAAAAAAAAA6wOUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T17:12:49.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SuperAdventure.cs [Design]",
+              "DocumentMoniker": "C:\\Projects\\SuperAdventure\\SuperAdventure\\SuperAdventure.cs",
+              "RelativeDocumentMoniker": "SuperAdventure.cs",
+              "ToolTip": "C:\\Projects\\SuperAdventure\\SuperAdventure\\SuperAdventure.cs [Design]",
+              "RelativeToolTip": "SuperAdventure.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T17:11:49.509Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
